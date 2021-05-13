@@ -1,0 +1,32 @@
+﻿<Window x:Class="Лаб_4.Redact"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Лаб_4"
+        mc:Ignorable="d"
+        Title="Заповнення інформації" Height="650" Width="850" WindowStyle="None" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" WindowStartupLocation="CenterScreen" BorderBrush="Black" Icon="C:\Users\lenovo\Desktop\Домашка 4 семестр\ООП\Лаб4\Лаб_4\Лаб_4\bin\Debug\favicon.ico">
+    <Border CornerRadius="40" Background="DarkGray">
+        <Grid>
+            <Button Name="buttonClose" HorizontalAlignment="Left" VerticalAlignment="Top" Width="36" Height="37" Background="Red" FontStyle="Normal" FontSize="20" FontWeight="UltraBold" BorderBrush="Black" Margin="787,10,0,0" Click="ButtonClose_Click" />
+            <Button Name="buttonCollapse" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="36" Height="37" Background="Lime" FontStyle="Normal" FontSize="20" FontWeight="UltraBold" BorderBrush="Black" Margin="746,10,0,0" Click="ButtonCollapse_Click" RenderTransformOrigin="1.507,0.581"/>
+            <Button Name="ButtonRedact" Content="Редагувати" HorizontalAlignment="Left" Margin="60,524,0,0" VerticalAlignment="Top" Width="210" Height="95" Click="ButtonRedact_Click" Background="Lime" FontWeight="UltraBold" FontStyle="Normal" FontSize="18"/>
+            <Label Name="channel" Content="Вимірювальний канал" Margin="319,39,316,569" FontStyle="Normal" FontSize="18" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Button Name="ButtonCancel" Content="Відмінити" HorizontalAlignment="Left" Margin="572,524,0,0" VerticalAlignment="Top" Width="210" Height="95" Click="ButtonCancel_Click" Background="Red" FontWeight="UltraBold" FontStyle="Normal" FontSize="18"/>
+            <Label x:Name="information_Copy" Content= "Датчик" Margin="366,326,410,287" FontStyle="Normal" FontSize="18" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy1" Content="Пристрій" Margin="366,198,383,410" FontStyle="Normal" FontSize="18" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy2" Content="Загальна кількість каналів" Margin="110,110,539,503" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy3" Content="Номер каналу" Margin="572,105,165,508" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy4" Content="Дата калібрування датчика" Margin="172,266,471,353" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy5" Content="Тип величини" Margin="349,387,392,236" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy6" Content="Діапазон вимірювання" Margin="60,387,614,225" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy7" Content="Поточне значення фізичної величини" Margin="538,387,41,231" FontStyle="Normal" FontSize="14" FontWeight="UltraBold" RenderTransformOrigin="0.234,-1.31"/>
+            <DatePicker x:Name="date" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.683,1.788" Margin="482,266,0,0" Height="30" Width="119" FontSize="14" Background="LightGray" BorderBrush="Black" FontWeight="UltraBold"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="78,430,0,0" FontSize="14" MaxLength="3" FontWeight="UltraBold" Background="LightGray" BorderBrush="Black" PreviewTextInput="TextBox1_PreviewTextInput" TextAlignment="Center"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="627,430,0,0" FontSize="14" MaxLength="3" FontWeight="UltraBold" Background="LightGray" BorderBrush="Black" PreviewTextInput= "TextBox1_PreviewTextInput" TextAlignment="Center"/>
+            <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="129" Margin="338,430,0,0" Background="LightGray" FontSize="14" FontWeight="UltraBold" BorderBrush="Black"/>
+            <Label x:Name="information_Copy8" Content="0" Margin="196,147,605,466" FontStyle="Normal" FontSize="18" FontWeight="Black" RenderTransformOrigin="0.234,-1.31"/>
+            <Label x:Name="information_Copy9" Content="0" Margin="607,147,204,466" FontStyle="Normal" FontSize="18" FontWeight="Black" RenderTransformOrigin="0.234,-1.31"/>
+        </Grid>
+    </Border>
+</Window>

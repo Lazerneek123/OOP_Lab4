@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ArrayOfMeasuringChannel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MeasuringChannel>
+    <NumberOfChannels>20</NumberOfChannels>
+    <information>
+      <GeneralInformation />
+    </information>
+    <serialNumberOfTheChannelCopy>1</serialNumberOfTheChannelCopy>
+    <typeOfSizes>
+      <valueSizes>Відсоток</valueSizes>
+    </typeOfSizes>
+    <sensor>
+      <measuringRangeCopy>45</measuringRangeCopy>
+      <physicalSizeCopy>95</physicalSizeCopy>
+    </sensor>
+    <device>
+      <sensor>
+        <measuringRangeCopy>45</measuringRangeCopy>
+        <physicalSizeCopy>95</physicalSizeCopy>
+      </sensor>
+      <dateTime>2021-05-26T00:00:00</dateTime>
+      <numberDevice>1</numberDevice>
+    </device>
+  </MeasuringChannel>
+</ArrayOfMeasuringChannel>
